@@ -23,6 +23,7 @@ export default function Home() {
           content="Umar Dev Works, web development, design, HTML, CSS, JavaScript, portfolio"
         />
         <link rel="canonical" href="https://umardevworks.com" />
+
         <meta
           property="og:title"
           content="Umar Dev Works - Web Development & Design Portfolio"
