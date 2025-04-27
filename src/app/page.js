@@ -40,7 +40,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="bg-white min-h-screen flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-black font-bold text-7xl md:text-8xl leading-tight">
-            Hi, I'm Umar
+            Hi, I&apos;m Umar
           </h1>
           <h2 className="text-blue-700 font-bold text-4xl md:text-5xl mt-6">
             <Typewriter
@@ -102,8 +102,8 @@ export default function Home() {
                 </h3>
                 <span className="text-gray-500 text-sm">2022 - Present</span>
                 <p className="text-gray-700 mt-2">
-                  ‭Home Automation: Developed with multiple Arduino &‬
-                  ‭ESP32/ESP8266 based sensors for home automation,‬ ‭including
+                  Home Automation: Developed with multiple Arduino &
+                  ESP32/ESP8266 based sensors for home automation,including
                   temperature, humidity, and motion sensors
                 </p>
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
   <div className="max-w-3xl mx-auto text-center">
     <h2 className="text-4xl font-bold mb-4 text-blue-500">Get In Touch</h2>
     <p className="text-gray-400 mb-8">
-      I'm currently open to new opportunities and collaborations. Let's connect!
+      Im currently open to new opportunities and collaborations. Lets connect!
     </p>
     <div className="flex justify-center space-x-6">
       <a
