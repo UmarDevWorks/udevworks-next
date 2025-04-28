@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
+
+
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -39,7 +41,7 @@ export default function Home() {
 
       <div className="bg-white font-inter">
         {/* Hero Section */}
-        <section className="bg-white min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <section id="hero" className="bg-white min-h-screen flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-black font-bold text-7xl md:text-8xl leading-tight">
             Hi, I&apos;m Umar
           </h1>

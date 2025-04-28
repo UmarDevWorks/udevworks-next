@@ -1,5 +1,5 @@
 // components/Navbar.js
-'use client';
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,42 +15,80 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="text-black text-2xl font-bold">
-          <Link className='text-left' href="/">Muhammad Umar</Link>
+          <Link className="text-left" href="/">
+            Muhammad Umar
+          </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <button className="text-black lg:hidden" onClick={toggleMenu}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-
-        {/* Navbar Links */}
-        <div className={`lg:flex space-x-6 ${isOpen ? "block" : "hidden"} lg:block ml-6 text-black`}>
-          <Link className='relative text-black  group' href="/">
-            Home
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-          </Link>
-          <Link className='relative text-black group' href="#projects">
-           Portfolio
-           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-          </Link>
-          <Link className='relative text-black  group' href="#contact">
-          Contact
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-          </Link>
+        <div className="flex justify-end ml-4 mr-4">
+          <button className="text-black lg:hidden" onClick={toggleMenu}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className={`h-6 w-6 transform transition-transform duration-500 ${
+                isOpen ? "rotate-90" : "rotate-0"
+              }`}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
+        {/* Navbar Links */}
+        <ul
+          className={`
+            flex flex-col lg:flex-row lg:items-center lg:space-x-6 space-y-4 lg:space-y-0
+            mt-4 lg:mt-0 ml-auto text-black transform transition-all duration-500 ease-in-out
+            ${
+              isOpen
+                ? "opacity-100 scale-100 translate-y-0"
+                : "opacity-0 scale-95 -translate-y-5"
+            }
+            ${isOpen ? "pointer-events-auto" : "pointer-events-none"}
+            lg:opacity-100 lg:scale-100 lg:translate-y-0 lg:pointer-events-auto
+          `}
+        >
+          <li>
+            <a
+              href="#hero"
+              onClick={() => setIsOpen(false)}
+              className="relative  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#projects"
+              onClick={() => setIsOpen(false)}
+              className="relative  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="relative  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div
+          className={`mt-4 text-md mb-4 ml-4 transform transition duration-500 hover:scale-105 ${
+            isOpen ? "hidden" : "block"
+          }`}
+        ></div>
       </div>
     </nav>
   );
