@@ -34,6 +34,8 @@ export default function Home() {
         />
         <meta property="og:url" content="https://umardevworks.com" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/118052848" />
+
       </Head>
       <Navbar></Navbar>
 
