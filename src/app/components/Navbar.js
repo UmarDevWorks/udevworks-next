@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-4 fixed top-0 z-10 w-full shadow-sm py-4">
+    <nav className="bg-white p-4 fixed top-0 z-10 w-full shadow-sm py-4 flex items-center justify-between">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="text-black text-2xl font-bold">
@@ -21,8 +21,8 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="flex justify-end ml-4 mr-4">
-          <button className="text-black lg:hidden" onClick={toggleMenu}>
+        <div className="flex justify-end ml-4 mr-2 relative">
+          <button className="text-black lg:hidden border-black border-2 rounded-sm" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -45,15 +45,14 @@ const Navbar = () => {
         <ul
           className={`
             flex flex-col lg:flex-row lg:items-center lg:space-x-6 space-y-4 lg:space-y-0
-            mt-4 lg:mt-0 ml-auto text-black transform transition-all duration-500 ease-in-out
-            ${
-              isOpen
-                ? "opacity-100 scale-100 translate-y-0"
-                : "opacity-0 scale-95 -translate-y-5"
-            }
-            ${isOpen ? "pointer-events-auto" : "pointer-events-none"}
-            lg:opacity-100 lg:scale-100 lg:translate-y-0 lg:pointer-events-auto
+            mt-4 lg:mt-0 ml-auto text-black
+            transform transition-all duration-500 ease-in-out
+            ${isOpen ? "opacity-100 scale-100 translate-y-0 max-h-96 pointer-events-auto" 
+                     : "opacity-0 scale-95 -translate-y-5 max-h-0 pointer-events-none"}
+            overflow-hidden
+            lg:opacity-100 lg:scale-100 lg:translate-y-0 lg:pointer-events-auto lg:max-h-full
           `}
+          
         >
           <li>
             <a

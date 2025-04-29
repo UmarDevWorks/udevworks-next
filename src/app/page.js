@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
-
-
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -41,7 +39,10 @@ export default function Home() {
 
       <div className="bg-white font-inter">
         {/* Hero Section */}
-        <section id="hero" className="bg-white min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <section
+          id="hero"
+          className="bg-white min-h-screen flex flex-col justify-center items-center text-center px-4"
+        >
           <h1 className="text-black font-bold text-7xl md:text-8xl leading-tight">
             Hi, I&apos;m Umar
           </h1>
@@ -68,10 +69,10 @@ export default function Home() {
               </button>
             </Link>
             <Link href="#contact">
-            <button className="hover:bg-blue-700 hover:text-white text-blue-600 border-blue-600 border-2 py-3 px-8 rounded-lg transition duration-300 text-lg">
-              Contact Me
-            </button>
-           </Link>
+              <button className="hover:bg-blue-700 hover:text-white text-blue-600 border-blue-600 border-2 py-3 px-8 rounded-lg transition duration-300 text-lg">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </section>
         <section
@@ -183,51 +184,82 @@ export default function Home() {
                 other functionalities.
               </p>
             </div>
-          </div>
-          
+            <div className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+              <video
+                width={800}
+                height={800}
+                className="w-full h-64 object-cover rounded-md"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/output.mp4" type="video/mp4" />
+                <Image
+                  src="/Time.jpg"
+                  alt="H&T CLOCK"
+                  width={800}
+                  height={800}
+                  className="w-full h-64 object-cover rounded-md"
+                />
+              </video>
 
+              <h3 className="text-black mt-6 text-xl font-semibold text-center">
+                H&T Clock
+              </h3>
+              <p className="text-gray-600 text-sm mt-2 text-center">
+                A humidity and temperature display with NTP time and date.
+              </p>
+            </div>
+          </div>
         </section>
         <section id="contact" className="py-16 bg-gray-900 text-white">
-  <div className="max-w-3xl mx-auto text-center">
-    <h2 className="text-4xl font-bold mb-4 text-blue-500">Get In Touch</h2>
-    <p className="text-gray-400 mb-8">
-      Im currently open to new opportunities and collaborations. Lets connect!
-    </p>
-    <div className="flex justify-center space-x-6">
-      <a
-        href="https://www.linkedin.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-blue-400 transition-colors duration-300"
-      >
-        <svg
-          className="w-8 h-8"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-4 text-blue-500">
+              Get In Touch
+            </h2>
+            <p className="text-gray-400 mb-8">
+              Im currently open to new opportunities and collaborations. Lets
+              connect!
+            </p>
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors duration-300"
+              >
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
             2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 
             19h-3v-10h3v10zm-1.5-11.28c-.97 
             0-1.75-.78-1.75-1.75s.78-1.75 
             1.75-1.75 1.75.78 1.75 1.75-.78 
             1.75-1.75 1.75zm13.5 11.28h-3v-5.5c0-1.38-.56-2-1.74-2s-1.76.62-1.76 
             2v5.5h-3v-10h3v1.32c.42-.62 1.35-1.32 
-            2.74-1.32 2.01 0 3.26 1.19 3.26 3.74v6.26z" />
-        </svg>
-      </a>
+            2.74-1.32 2.01 0 3.26 1.19 3.26 3.74v6.26z"
+                  />
+                </svg>
+              </a>
 
-      <a
-        href="https://github.com/UmarDevWorks"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-purple-400 transition-colors duration-300"
-      >
-        <svg
-          className="w-8 h-8"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M12 .5C5.648.5.5 5.648.5 
+              <a
+                href="https://github.com/UmarDevWorks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-purple-400 transition-colors duration-300"
+              >
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .5C5.648.5.5 5.648.5 
             12c0 5.084 3.292 9.396 7.862 
             10.918.575.106.785-.25.785-.555 
             0-.274-.01-1.001-.016-1.963-3.198.695-3.875-1.542-3.875-1.542-.523-1.327-1.278-1.68-1.278-1.68-1.045-.715.08-.701.08-.701 
@@ -244,12 +276,13 @@ export default function Home() {
             5.383-5.252 5.669.414.356.78 1.056.78 
             2.133 0 1.54-.015 2.78-.015 
             3.159 0 .308.207.666.79.552C20.713 
-            21.39 24 17.083 24 12c0-6.352-5.148-11.5-12-11.5z" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
+            21.39 24 17.083 24 12c0-6.352-5.148-11.5-12-11.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
