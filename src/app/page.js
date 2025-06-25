@@ -452,10 +452,10 @@ export default function Home() {
                 GET IN TOUCH
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
-                Let's Build Something Amazing
+                Let&apos;s Build Something Amazing
               </h2>
               <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-                I'm currently open to new opportunities and collaborations.
+                I&apos;m currently open to new opportunities and collaborations.
                 Whether you have a project in mind or just want to connect, feel
                 free to reach out!
               </p>
