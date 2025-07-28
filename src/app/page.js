@@ -14,7 +14,7 @@ import {
   FaGit,
   FaDocker,
   FaAws,
-  FaShoppingCart
+  FaShoppingCart,
 } from "react-icons/fa";
 
 import {
@@ -24,7 +24,7 @@ import {
   SiArduino,
   SiEspressif,
   SiNextdotjs,
-  SiMongodb
+  SiMongodb,
 } from "react-icons/si";
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
                 words={[
                   "Full-Stack Developer",
                   "IoT Developer",
-                  "UI/UX Designer"
+                  "UI/UX Designer",
                 ]}
                 loop={true}
                 cursor
@@ -95,57 +95,57 @@ export default function Home() {
                       <FaHtml5 className="text-orange-500" />
                       <FaCss3Alt className="text-blue-500" />
                     </>
-                  )
+                  ),
                 },
                 {
                   name: "JavaScript",
-                  icon: <FaJs className="text-yellow-400" />
+                  icon: <FaJs className="text-yellow-400" />,
                 },
                 {
                   name: "React.js",
-                  icon: <FaReact className="text-cyan-400" />
+                  icon: <FaReact className="text-cyan-400" />,
                 },
                 {
                   name: "Next.js",
-                  icon: <SiNextdotjs className="text-white" />
+                  icon: <SiNextdotjs className="text-white" />,
                 },
                 {
                   name: "Node.js",
-                  icon: <FaNodeJs className="text-green-500" />
+                  icon: <FaNodeJs className="text-green-500" />,
                 },
                 {
                   name: "Python",
-                  icon: <FaPython className="text-yellow-300" />
+                  icon: <FaPython className="text-yellow-300" />,
                 },
                 {
                   name: "Tailwind CSS",
-                  icon: <SiTailwindcss className="text-teal-400" />
+                  icon: <SiTailwindcss className="text-teal-400" />,
                 },
                 {
                   name: "Supabase",
-                  icon: <SiSupabase className="text-green-400" />
+                  icon: <SiSupabase className="text-green-400" />,
                 },
                 {
                   name: "MongoDB",
-                  icon: <SiMongodb className="text-blue-500" />
+                  icon: <SiMongodb className="text-blue-500" />,
                 },
                 {
                   name: "Docker",
-                  icon: <FaDocker className="text-blue-300" />
+                  icon: <FaDocker className="text-blue-300" />,
                 },
                 {
                   name: "Arduino",
-                  icon: <SiArduino className="text-blue-400" />
+                  icon: <SiArduino className="text-blue-400" />,
                 },
                 {
                   name: "ESP32/8266",
-                  icon: <SiEspressif className="text-red-500" />
+                  icon: <SiEspressif className="text-red-500" />,
                 },
                 {
                   name: "AWS EC2",
-                  icon: <FaAws className="text-orange-300" />
+                  icon: <FaAws className="text-orange-300" />,
                 },
-                { name: "Git", icon: <FaGit className="text-red-500" /> }
+                { name: "Git", icon: <FaGit className="text-red-500" /> },
               ].map((skill, index) => (
                 <div
                   key={index}
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    MakerBox.pk
+                    <Link href="https://makerbox.pk">MakerBox.pk</Link>
                   </h3>
                   <span className="text-blue-400 text-sm">
                     Founder & Full-Stack Developer | 2023-Present
