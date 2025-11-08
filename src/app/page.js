@@ -37,14 +37,14 @@ export default function Home() {
 
       <Navbar />
 
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 font-inter text-gray-100">
+      <div className="min-h-screen  font-inter text-gray-100">
         {/* Hero Section */}
         <section
           id="hero"
           className="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden"
         >
           {/* Background elements remain the same */}
-          <div className="relative z-10 max-w-4xl backdrop-blur-sm bg-black/30 p-8 rounded-2xl border border-gray-800/50 shadow-xl">
+          <div className="relative z-10 max-w-4xl backdrop-blur-sm  p-8 rounded-2xl border border-gray-800/50 shadow-xl">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
               Hi, I&apos;m Umar
             </h1>
@@ -73,7 +73,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-20 bg-gray-900/50 backdrop-blur-sm">
+        <section id="skills" className="py-20 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-16"></div>
             <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -164,10 +164,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section - Updated with your content */}
-        <section
-          id="projects"
-          className="py-20 bg-gray-900/60 backdrop-blur-sm"
-        >
+        <section id="projects" className="py-20  backdrop-blur-sm">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-16">
               <span className="text-blue-400 font-medium tracking-widest">
@@ -180,7 +177,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* MakerBox Project */}
-              <div className="bg-gray-800/50 hover:bg-gray-800/70 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="bg-black hover:bg-gray-900 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <div className="relative h-64 bg-black">
                   <Image
                     src="/makerbox.webp"
@@ -214,7 +211,7 @@ export default function Home() {
               </div>
 
               {/* Discord Bot Project */}
-              <div className="bg-gray-800/50 hover:bg-gray-800/70 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="bg-black hover:bg-gray-900 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <div className="relative h-64 bg-black">
                   <Image
                     src="/botdash.png"
@@ -249,7 +246,7 @@ export default function Home() {
               </div>
 
               {/* IoT Projects */}
-              <div className="bg-gray-800/50 hover:bg-gray-800/70 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="bg-black hover:bg-gray-900 rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <div className="relative h-64 bg-black">
                   <video
                     autoPlay
@@ -329,7 +326,7 @@ export default function Home() {
         {/* Experience & Education Section */}
         <section
           id="experience"
-          className="py-20 px-4 md:px-8 lg:px-16 bg-gray-900/50 backdrop-blur-sm"
+          className="py-20 px-4 md:px-8 lg:px-16 backdrop-blur-sm"
         >
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -438,10 +435,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section
-          id="contact"
-          className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 border-t border-gray-800/50"
-        >
+        <section id="contact" className="py-20 border-t border-gray-800/50">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="mb-16">
               <span className="text-blue-400 font-medium tracking-widest">

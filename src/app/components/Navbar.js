@@ -23,7 +23,7 @@ const Navbar = () => {
     { name: "Home", href: "#hero" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -33,8 +33,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-800/50"
-          : "bg-gray-900/50 backdrop-blur-md"
+          ? "bg-black/60 backdrop-blur-md shadow-lg border-b border-gray-800/50"
+          : "bg-black/50 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -123,7 +123,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden overflow-hidden"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800/90 backdrop-blur-md border-t border-gray-700/50">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800/20 backdrop-blur-md border-t border-gray-700/50">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.name}
